@@ -11,7 +11,6 @@ def load_library(file)
       japanese: v1[1]
     }
   end
-  binding.pry
   new_hash
 end
 
