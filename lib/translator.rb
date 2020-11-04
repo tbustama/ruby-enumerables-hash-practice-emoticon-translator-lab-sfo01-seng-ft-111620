@@ -21,7 +21,7 @@ end
 def get_english_meaning(file, emoticon)
   hash = load_library(file)
   hash.each do |k1, v1|
-    if v1[1].values == [emoticon]
+    if v1.values[1] == [emoticon]
       return k1
     end
   end
