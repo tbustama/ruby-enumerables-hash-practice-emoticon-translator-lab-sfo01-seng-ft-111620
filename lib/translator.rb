@@ -22,7 +22,9 @@ end
 def get_english_meaning(file, emoticon)
   hash = load_library(file)
   hash.each do |k1, v1|
-    
+    if v1.include?(emoticon)
+      return k1
+    end
   end
 end
 
