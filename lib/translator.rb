@@ -7,7 +7,7 @@ def load_library(file)
   new_file.each do |k1, v1|
     new_hash[k1] = {
       english: v1[0],
-      japanese: v1[0]
+      japanese: v1[1]
     }
   end
   binding.pry
